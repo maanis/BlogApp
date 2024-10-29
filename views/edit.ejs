@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/stylesheets/form.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+
+<body>
+    <section class="form-section">
+        <form action="/edited" class="flex flex-col justify-center" method="post">
+            <label for="old">Old Name</label>
+            <input class="outline-none" type="text" id="old" name="old" value="<%= oldName %>" readonly required>
+            <label for="new">New Name</label>
+            <input type="text" id="new" name="new" required>
+            <input class="bg-yellow-500 px-3 py-1 rounded-md font-semibold text-white cursor-pointer" type="submit"
+                value="Update Now">
+        </form>
+    </section>
+</body>
+
+</html>
